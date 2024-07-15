@@ -1,0 +1,196 @@
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #2D2D2A;
+    color: #fff;
+    padding: 50px 0;
+    font-family: 'AlteHaasGroteskBold', sans-serif;
+
+    .caixa {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+      }
+
+    .addContainer {
+        background-color: #4C4C47;
+        padding: 30px;
+        border-radius: 8px;
+        width: 80%;
+        max-width: 800px;
+
+        .titulo {
+            text-align: center;
+            font-size: 40px;
+            color: white;
+        }
+
+        .inicio {
+            text-align: center;
+            margin-bottom: 40px;
+
+            img {
+                width: 100px;
+                margin: 20px auto 40px;
+                display: block;
+            }
+
+            .criar {
+                background-color: #2D2D2A;
+                width: 40%;
+                margin: 0 auto;
+                padding: 8px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 40px;
+
+            h3 {
+                margin-top: 30px;
+            }
+
+            input[type="text"] {
+                padding: 10px;
+                border: 1px solid #555;
+                border-radius: 10px;
+                background-color: #2D2D2A;
+                color: #fff;
+
+                &::placeholder {
+                    color: #ffffff91;
+                }
+            }
+
+            .opcoes {
+                display: flex;
+                justify-content: space-between;
+                margin: 10px 0 60px;
+
+                .dificulty-btn {
+                    display: inline-block;
+                    background-color: #2D2D2A;
+                    color: white;
+                    padding: 8px;
+                    margin-left: 6%;
+                    margin-right: 6%;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    width: 18%;
+                    text-align: center;
+                    &:hover {
+                        background-color: rgba(45, 45, 42, 0.576);
+                    }
+                }
+
+                .selecionar {
+                    background-color: #ffaa7f;
+                }
+            }
+
+            button[type="submit"] {
+                font-size: 22px;
+                font-weight: bold;
+                margin: 0 auto;
+                padding: 10px 20px;
+                border: none;
+                width: 40%;
+                border-radius: 15px;
+                background-color: #2D2D2A;
+                color: #fff;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: rgba(45, 45, 42, 0.548);
+                }
+
+                .disabled {
+                    background-color: rgba(225, 225, 225, 0.53);
+                    color: rgba(138, 138, 138, 0.53);
+                    cursor: not-allowed;
+                }
+            }
+        }
+
+        .listagem {
+            width: 85%;
+            margin: 0 auto;
+
+            h2 {
+                text-align: center;
+                font-size: 40px;
+            }
+
+            h3 {
+                font-size: 28px;
+            }
+
+            .tarefa {
+                border: 1px solid #2D2D2A;
+                padding: 0 20px;
+                border-radius: 5px;
+                width: 50%;
+                margin: 0 0 10px 30px;
+
+                .header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: -5px;
+
+                    h4 {
+                        font-size: 22px;
+                        font-weight: bold;
+                    }
+
+                    .icons {
+                        .fa-check {
+                            color: green;
+                            margin-right: 10px;
+                            cursor: pointer;
+
+                            &:hover {
+                                color: rgb(0, 77, 0);
+                            }
+                        }
+
+                        .fa-times {
+                            color: red;
+                            cursor: pointer;
+
+                            &:hover {
+                                color: rgb(131, 0, 0);
+                            }
+                        }
+
+                        .fa-edit {
+                            color: white;
+                            margin-left: 10px;
+                            cursor: pointer;
+
+                            &:hover {
+                                color: gray;
+                            }
+                        }
+                    }
+                }
+
+                .detalhes {
+                    margin-top: -20px;
+                    margin-left: 10%;
+                }
+            }
+        }
+    }
+}
